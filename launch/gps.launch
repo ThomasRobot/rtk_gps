@@ -1,0 +1,9 @@
+<launch>
+
+  <arg name="device" default="/ttyUSB0" />
+
+  <node pkg="rtk_gps" type="gps" name="rtk_gps">
+    <param name="device" value="$(arg device)"/>
+  </node>
+
+</launch>
